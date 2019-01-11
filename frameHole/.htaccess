@@ -1,0 +1,12 @@
+#Options -Indexes
+#
+RewriteEngine On
+## RewriteBase /
+#
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-s
+RewriteCond %{HTTP:X-Requested-With} !=XMLHttpRequest
+RewriteRule !\.(css|js|icon|zip|rar|png|jpg|gif|pdf)$ index.php [L]
+#
+#AddType application/x-httpd-php .php .phtml

@@ -1,0 +1,18 @@
+PROFILE
+id, email, telefoon, ...
+
+CATEGORY
+id, name
+
+SUB-CATEGORY
+id, name
+
+POSTS
+id, profile_ID, categorie_ID, sub_catory_ID,
+
+COMMENTS
+id, profile_ID, post_ID
+BIDS(comments)
+id, comment_ID
+MESSAGES(comments)
+id, comment_ID
